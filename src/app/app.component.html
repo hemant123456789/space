@@ -31,11 +31,20 @@
   <div class="body-area">
    <!--card-->
    <div class="card" *ngFor="let space of spaceData">
-    {{space}}
+    <a href="{{space.links.article_link}}" target="_blank">
+   <img class="imgclass" height="113px" width="127px" src="{{space.links.mission_patch}}">
     <div class="container">
-      <h4><b>John Doe</b></h4> 
-      <p>Architect & Engineer</p> 
+      <h4 class="colorClass"><b>{{space.mission_name}} #{{space.flight_number}}</b></h4> 
+      <p class="classBlack"><b>Mission Ids</b></p> 
+      <ul>
+        <ng-container *ngFor="let item of space.mission_id"> <li>{{item}}</li></ng-container>
+       
+      </ul>
+      <p ><b class="classBlack">Launch Year :</b> {{space.launch_year}}</p> 
+      <p ><b class="classBlack">Successful Launch :</b> {{space.launch_success}}</p> 
+      <p ><b class="classBlack">Successful Landing :</b> {{space.launch_landing}}</p> 
     </div>
+    </a>
   </div>
    <!--card-->
   </div>
