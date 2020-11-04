@@ -32,7 +32,7 @@
    <!--card-->
    <div class="card" *ngFor="let space of spaceData">
     <a href="{{space.links.article_link}}" target="_blank">
-   <img class="imgclass" height="113px" width="127px" src="{{space.links.mission_patch}}">
+   <img class="imgclass" height="196px" width="385px" src="{{space.links.mission_patch}}">
     <div class="container">
       <h4 class="colorClass"><b>{{space.mission_name}} #{{space.flight_number}}</b></h4> 
       <p class="classBlack"><b>Mission Ids</b></p> 
@@ -45,6 +45,7 @@
       <p ><b class="classBlack">Successful Landing :</b> {{space.launch_landing}}</p> 
     </div>
     </a>
+    <h5 *ngIf="spaceData.length==0">No Records Found</h5>
   </div>
    <!--card-->
   </div>

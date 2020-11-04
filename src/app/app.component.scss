@@ -72,7 +72,7 @@ body {
     height: 360px;
     background-color: white!important;
     flex: 0 25%;
-    max-width: 260px;
+    max-width: 384px;
     margin: inherit;
     border: 1px solid grey;
     margin-bottom: 10px;
@@ -146,7 +146,7 @@ body {
         height: 360px;
         background-color: white !important;
          flex: 0 100%; 
-        max-width: 262px;
+        max-width: 384px;
        margin: inherit;
         border: 1px solid grey;
         margin-bottom: 10px;
@@ -179,8 +179,9 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    padding-top: 8px;
+    width: 100%;
+    background-color: gray;
+    padding-top: 1px;
   }
   .colorClass{
     color: blue;
