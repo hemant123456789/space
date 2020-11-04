@@ -10,11 +10,11 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
+  imports: [  
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),  
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
